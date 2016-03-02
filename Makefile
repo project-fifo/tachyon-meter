@@ -38,3 +38,6 @@ deps:
 
 test:
 	true
+
+update:
+	true
