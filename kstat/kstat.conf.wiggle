@@ -1,0 +1,41 @@
+###
+# CPU
+##
+#cpu_stat:::user
+#cpu_stat:::idle
+#cpu_stat:::kernel
+
+###
+# Zone CPU Graph
+###
+caps:*:cpucaps_zone_*:effective
+caps:*:cpucaps_zone_*:usage
+caps:*:cpucaps_zone_*:value
+
+###
+# Zone Mem
+###
+caps:*:physicalmem_zone_*:value
+caps:*:physicalmem_zone_*:usage
+
+###
+# Zone Swap
+###
+caps:*:swapresv_zone_*:value
+caps:*:swapresv_zone_*:usage
+
+###
+# Zone Net
+###
+link:0:z*:opackets64
+link:0:z*:obytes64
+link:0:z*:ipackets64
+link:0:z*:rbytes64
+
+###
+# Zone ZFS
+###
+zone_zfs:::nread
+zone_zfs:::nwritten
+zone_zfs:*:*:writes
+zone_zfs:*:*:writes
